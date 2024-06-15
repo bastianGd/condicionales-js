@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-contenedor.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+
+        <ul>
+            <li class="menu-item"><a href="./index.html">Desafío - Parte 1</a></li>
+            <li class="menu-item active"><a href="#">Desafío - Parte 2</a></li>
+            <li class="menu-item"><a href="./passwords.html">Desafío - Parte 3</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="p-mensaje">
+        <p>Solo puedes llevar solo hasta 10 stickers</p>
+    </div>
+
+
+    <main>
+
+        <div class="contenedor formulario">
+            <div class="contenedor-imagen">
+                <img src="./assets/img/punk.jpg" alt="punk logo">
+                <input id="sticker-1" type="number" min="0" max="10">
+            </div>
+
+            <div class="contenedor-imagen">
+                <img src="./assets/img/24906691_0.webp" alt="slaughter to prevail Alex terrible mask">
+                <input id="sticker-2" type="number" min="0" max="10">
+
+            </div>
+
+            <div class="contenedor-imagen">
+                <img src="./assets/img/sticker_1.webp" alt="logo de green day awesome as f***">
+                <input id="sticker-3" type="number" min="0" max="10">
+            </div>
+        </div>
+        <div class="total-contenedor">
+            <p class="p-total"></p>
+        </div>
+        <div>
+            <button class="comprar-btn" onclick="buyStickers()">
+                Llevar
+            </button>
+        </div>
+
+    </main>
+
+</body>
+<script src="./assets/js/stickers.js"></script>
+
+</html>
