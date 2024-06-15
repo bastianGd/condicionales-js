@@ -1,0 +1,40 @@
+.p-mensaje {
+  text-align: center;
+  padding: 10px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contenedor-imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario input {
+  margin: 30px 0;
+  width: 50%;
+}
+
+.contenedor-imagen img {
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 0 50px;
+  height: 400px;
+  width: 400px;
+}
+
+.comprar-btn {
+  display: flex;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.total-contenedor {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
