@@ -1,7 +1,12 @@
-document.getElementById("simpson-img").addEventListener("click", function () {
-  if (document.getElementById("simpson-img").style.border == "") {
-    document.getElementById("simpson-img").style.border = "solid 2px red";
+//add img as a const
+const simpsonImg = document.getElementById("simpson-img");
+//anonimous function onclick 
+simpsonImg.addEventListener("click", () => {
+  if (simpsonImg.style.border == "") {
+    simpsonImg.style.border = "solid 2px red";
   } else {
-    document.getElementById("simpson-img").style.border = "";
+    simpsonImg.style.border = "";
   }
 });
+
+
