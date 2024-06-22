@@ -2,15 +2,19 @@ function checkPassword() {
   let valor1 = document.getElementById("primer-valor").value;
   let valor2 = document.getElementById("segundo-valor").value;
   let valor3 = document.getElementById("tercer-valor").value;
-
-  if (valor1 == 9 && valor2 == 1 && valor3 == 1) {
-    document.querySelector("p.resultado-password").innerHTML =
-      "Password1 correcto";
-  } else if (valor1 == 7 && valor2 == 1 && valor3 == 4) {
-    document.querySelector("p.resultado-password").innerHTML =
-      "Password2 correcto";
+  const password = valor1 + valor2 + valor3;
+  if (password === "911") {
+    resultado.textContent = "Password1 correcto";
+  } else if (password === "714") {
+    resultado.textContent = "Password2 correcto";
   } else {
-    document.querySelector("p.resultado-password").innerHTML =
-      "Password Incorrecto";
+    resultado.textContent = "Password Incorrecto";
   }
+}
+
+function checkPassword() {
+  const valor1 = document.getElementById("primer-valor").value;
+  const valor2 = document.getElementById("segundo-valor").value;
+  const valor3 = document.getElementById("tercer-valor").value;
+  const resultado = document.querySelector("p.resultado-password");
 }
